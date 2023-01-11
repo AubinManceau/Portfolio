@@ -260,7 +260,7 @@ nav a.titre{
     width: 40vw;
     height: 40vh;
     background-color: #FFB632;
-    gap: 70px 0px;
+    gap: 50px 0px;
 }
 
 .contenu-footer .rs-footer a{
@@ -271,7 +271,7 @@ nav a.titre{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 70px 0px;
+    gap: 50px 0px;
     z-index: 2;
     width: 60vw;
     height: 40vh;
