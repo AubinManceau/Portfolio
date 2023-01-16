@@ -28,35 +28,14 @@ body{
     background-color: #FFB632;
 }
 
-#overlay{
-    z-index: 1000;
-    position: fixed;
-    background-color: rgba(49, 49, 49, 0);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: .3s all ease-in-out;
-}
-
-#overlay.hidden{
-    visibility: hidden;
-    z-index: -1;
-}
-
-#overlay.visible{
-    visibility: visible;
-    background-color: rgba(49, 49, 49, 0.4);
-}
-
 #navigation_drawer{
     position: fixed;
     top: 0;
     z-index: 1001;
     height: 100vh;
     background-color: #2C2C2C;
-    width: 100%;
-    max-width: 350px;
+    width: 100vw;
+    max-width: 90%;
     padding: 25px;
     transform: translateX(-100%);
     transition: .3s all ease-in-out;
