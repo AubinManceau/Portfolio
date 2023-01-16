@@ -28,39 +28,81 @@ body{
     background-color: #FFB632;
 }
 
-nav{
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul{
-    position: absolute;
-    right: 0;
-    display: flex;
-    gap: 28px;    
-    list-style-type: none;
-    margin: 0;
-    margin: 10px 10px 0 0;
-    z-index: 2;
-
-}
-
-nav ul li a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
-    padding: 5px;
-}
-
-nav a.titre{
-    position: absolute;
+#overlay{
+    z-index: 1000;
+    position: fixed;
+    background-color: rgba(49, 49, 49, 0);
+    top: 0;
     left: 0;
-    color: rgb(255, 255, 255);
+    right: 0;
+    bottom: 0;
+    transition: .3s all ease-in-out;
+}
+
+#overlay.hidden{
+    visibility: hidden;
+    z-index: -1;
+}
+
+#overlay.visible{
+    visibility: visible;
+    background-color: rgba(49, 49, 49, 0.4);
+}
+
+#navigation_drawer{
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    transform: translateX(-100%);
+    transition: .3s all ease-in-out;
+}
+
+#navigation_drawer.open{
+    transform: translateX(0);
+}
+
+#navigation_drawer span{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-burger ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.nav-burger a{
+    font-size: 25px;
+    display: inline-block;
     text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
-    margin: 10px 0 0 10px;
-    z-index: 2;
+    color: #000000;
+    padding: 10px 25px;
+}
+
+.nav-burger li:hover{
+    background-color: black;
+}
+
+.nav-burger li:hover a{
+    color: white;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation-nav{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #000000;
 }
 
 .contenu-header{
