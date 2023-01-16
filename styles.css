@@ -323,3 +323,7 @@ body{
 .contenu-footer .rs-footer a>img{
     width: 60px;
 }
+
+.text-about p{
+    margin-bottom: 20px;
+}
