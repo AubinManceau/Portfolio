@@ -135,8 +135,9 @@ body{
     text-decoration: none;
     color: #ffffff;
     border: solid #FFB632 1px;
-    padding: 5px;
-    font-family: 'Poppins', sans-serif;
+    padding: 6px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
     font-size: 12px;
 }
 
@@ -201,6 +202,12 @@ body{
     margin-top: 25px;
     display: flex;
     justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.bouton a{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
 }
 
 .skills{
@@ -241,7 +248,7 @@ body{
 	background-color: #FFB632;
 }
 /* back side bg is orange gradient */ .back {
-	background-color: #FFB632;
+	background-color: #2C2C2C;
 }
 
 .card-container {
@@ -257,7 +264,13 @@ body{
 }
 .back {
 	transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 0;
 }
+
+
 .card-container:hover .front {
 	transform: rotateY(-180deg);
 }
@@ -326,4 +339,21 @@ body{
 
 .text-about p{
     margin-bottom: 20px;
+}
+
+.front-text{
+    margin-top: 5px;
+}
+
+.mdi-star{
+    color: #ffffff;
+}
+
+.gold{
+    color: #FFB632;
+}
+
+.back p{
+    margin-bottom: 10px;
+    color: #ffffff;
 }
