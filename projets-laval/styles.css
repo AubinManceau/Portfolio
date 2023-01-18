@@ -141,30 +141,9 @@ body{
     font-size: 12px;
 }
 
-.about{
-    background-color: #313131;
-    padding: 10px;
-}
-
-.about h3{
-    margin: 0;
-    font-family: 'Bebas Neue', cursive;
-    color: #FFB632;
-    font-size: 30px;
-    margin-top: 15px;
-    margin-bottom: 25px;
-}
-
-.about p{
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    font-size: 15px;
-}
-
 .projet{
-    background-color: #2C2C2C;
-    padding: 10px;
+    background-color: #313131;
+    padding: 25px;
 }
 
 .projet h3{
@@ -185,115 +164,19 @@ body{
 .img-projet img{
     width: 250px;
     height: 250px;
+    padding: 15px;
+    border: 1px solid #FFB632;
     align-self: center;
 }
 
-
-.projet a{
-    text-decoration: none;
+.text-projet-info{
     color: #ffffff;
-    border: solid #FFB632 1px;
-    padding: 5px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    width: 40vw;
-    text-align: center;
-}
-
-.bouton{
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.bouton a{
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 1px;
-}
-
-.skills{
-    background-color: #313131;
-    padding: 10px;
+    font-family: 'Poppins', cursive;
 }
 
 
-.text-skills h3{
-    margin: 0;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    font-family: 'Bebas Neue', cursive;
-    color: #FFB632;
-    font-size: 30px;
-}
-
-.card-container, .front, .back {
-	width: 80px;
-	height: 80px;
-}
-.card-container {
-	margin: 25px;
-}
-.front, .back {
-	box-sizing: border-box;
-	padding: 5px;
-	border-radius: 4px;
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
-
-	font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
-	font-size: 10px;
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	text-align: center;
-}
-/* front side bg is green gradient */ .front {
-	background-color: #FFB632;
-}
-/* back side bg is orange gradient */ .back {
-	background-color: #2C2C2C;
-}
-
-.card-container {
-	position: relative;
-}
-.front, .back {
-	position: absolute;
-	top: 0;
-	left: 0;
-	backface-visibility: hidden;
-	overflow: hidden;
-	transition: transform .8s ease;
-}
-.back {
-	transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px 0;
-}
 
 
-.card-container:hover .front {
-	transform: rotateY(-180deg);
-}
-.card-container:hover .back {
-	transform: rotateY(0deg);
-}
-
-.card-container {
-	perspective: 75rem;
-}
-
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.front img{
-    width: 50px;
-    margin: auto;
-}
 
 .contenu-footer{
     position: relative;
@@ -337,25 +220,4 @@ body{
 
 .contenu-footer .rs-footer a>img{
     width: 60px;
-}
-
-.text-about p{
-    margin-bottom: 20px;
-}
-
-.front-text{
-    margin-top: 5px;
-}
-
-.mdi-star{
-    color: #ffffff;
-}
-
-.gold{
-    color: #FFB632;
-}
-
-.back p{
-    margin-bottom: 10px;
-    color: #ffffff;
 }
