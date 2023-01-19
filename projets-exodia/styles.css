@@ -41,22 +41,6 @@ body{
     transition: .3s all ease-in-out;
 }
 
-.bouton{
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.bouton a{
-    font-family: 'Bebas Neue', cursive;
-    border: #FFB632 solid 1px;
-    color: #ffffff;
-    padding: 8px;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
 #navigation_drawer.open{
     transform: translateX(0);
 }
@@ -155,6 +139,22 @@ body{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1px;
     font-size: 12px;
+}
+
+.bouton{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.bouton a{
+    font-family: 'Bebas Neue', cursive;
+    border: #FFB632 solid 1px;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .projet{
