@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body{
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.conteneur{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    z-index: -1;
+}
+     
+.element:nth-child(1){
+    width: 60vw;
+    height: 40vh;
+    background-color: #2C2C2C;
+}
+     
+.element:nth-child(2){
+    width: 40vw;
+    height: 40vh;
+    background-color: #FFB632;
+}
+
+#navigation_drawer{
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    height: 100vh;
+    background-color: #2C2C2C;
+    width: 100vw;
+    max-width: 90%;
+    padding: 25px;
+    transform: translateX(-100%);
+    transition: .3s all ease-in-out;
+}
+
+#navigation_drawer.open{
+    transform: translateX(0);
+}
+
+#navigation_drawer span{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-burger ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.nav-burger a{
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFB632;
+    padding: 10px 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-burger li:hover{
+    background-color: #FFB632;
+}
+
+.nav-burger li:hover a{
+    color: #2C2C2C;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation-nav{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #000000;
+    z-index: 100;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+#btn_close_drawer{
+    color: #FFB632;
+}
+
+#btn_open_drawer{
+    color: #2C2C2C;
+}
+
+.contenu-header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contenu-header .img-header img{
+    height: 40vh;
+}
+
+.contenu-header .text-header{
+    margin-left: 15px;
+    align-self: center;
+}
+
+.contenu-header .text-header h2{
+    color: #FFB632;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 30px;
+    margin: 0;
+}
+
+.contenu-header .text-header p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.contenu-header .text-header a{
+    text-decoration: none;
+    color: #ffffff;
+    border: solid #FFB632 1px;
+    padding: 6px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.bouton{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.bouton a{
+    font-family: 'Bebas Neue', cursive;
+    border: #FFB632 solid 1px;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.projet{
+    background-color: #313131;
+    padding: 25px;
+}
+
+.projet h3{
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFB632;
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.img-projet{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.img-projet img{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    border: 1px solid #FFB632;
+    align-self: center;
+}
+
+.text-projet-info{
+    color: #ffffff;
+    font-family: 'Poppins', cursive;
+}
+
+
+
+
+
+.contenu-footer{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenu-footer .rs-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    width: 40vw;
+    height: 40vh;
+    background-color: #FFB632;
+    gap: 20px 0px;
+}
+
+.contenu-footer .rs-footer a{
+    text-align: center;
+}
+
+.contenu-footer .pages-footer{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0px;
+    z-index: 2;
+    width: 60vw;
+    height: 40vh;
+    background-color: #2C2C2C;
+}
+
+.contenu-footer .pages-footer a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.contenu-footer .rs-footer a>img{
+    width: 60px;
+}
